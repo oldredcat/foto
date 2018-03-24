@@ -1,1 +1,356 @@
-/* LESS Document */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,700|Playfair+Display:400,700');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+.clr {
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 310px;
+  padding: 0 5px;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 440px;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+    padding: 0 34px;
+  }
+}
+h1 {
+  color: #010101;
+  border-bottom: #000 solid 2px;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  font-size: 26px;
+  line-height: 20px;
+}
+@media (min-width: 480px) {
+  h1 {
+    font-size: 40px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 32px;
+  }
+}
+h1 span {
+  background: #fff;
+  padding-right: 20px;
+}
+#photo {
+  padding: 25px 0 0 0;
+}
+@media (min-width: 480px) {
+  #photo {
+    padding: 40px 0 5px 0;
+  }
+}
+@media (min-width: 768px) {
+  #photo {
+    padding: 40px 0 10px 0;
+  }
+}
+#photo .nfo {
+  display: none;
+  padding: 5px 0;
+}
+@media (min-width: 768px) {
+  #photo .nfo {
+    display: block;
+  }
+}
+#photo .nfo p {
+  color: #000;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+#photo .nfo p + p {
+  color: #acacac;
+  font-weight: normal;
+}
+#photo .photo {
+  padding-top: 20px;
+  position: relative;
+}
+@media (min-width: 480px) {
+  #photo .photo {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  #photo .photo:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    bottom: -3px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+#photo .date {
+  position: absolute;
+  top: 26px;
+  left: 6px;
+  width: 80px;
+  height: 53px;
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
+  line-height: 24px;
+  background: rgba(255, 255, 255, 0.7);
+}
+@media (min-width: 480px) {
+  #photo .date {
+    top: 40px;
+    left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  #photo .date {
+    top: 50px;
+    left: 20px;
+    width: 160px;
+    height: 80px;
+    font-size: 36px;
+    line-height: 46px;
+    padding: 12px 0;
+  }
+  #photo .date:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    top: 32px;
+    right: 20px;
+    background: url(../images/arrow.gif);
+  }
+}
+#photo .date span {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  #photo .date span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.gallery-block {
+  font-size: 0;
+  line-height: 0;
+  margin: 0 -3px;
+}
+@media (min-width: 480px) {
+  .gallery-block {
+    margin: 0 -5px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-block {
+    margin: 0 -10px;
+  }
+}
+.gallery-item {
+  display: inline-block;
+  width: 73px;
+  min-height: 48px;
+  vertical-align: top;
+  text-decoration: none;
+  color: #000;
+  margin: 0 3px 6px 3px;
+}
+@media (min-width: 480px) {
+  .gallery-item {
+    width: 80px;
+    margin: 0 5px 10px 5px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-item {
+    width: 160px;
+    margin: 0 10px 20px 10px;
+  }
+}
+.gallery-item img {
+  width: 100%;
+}
+.gallery-item span {
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 5px 0;
+}
+@media (min-width: 768px) {
+  .gallery-item span {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 20px 0;
+  }
+  .gallery-item span:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    top: 36px;
+    right: 20px;
+    background: url(../images/arrow.gif);
+  }
+}
+.gallery-item span span {
+  font-size: 14px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .gallery-item span span {
+    font-size: 18px;
+    padding: 0;
+  }
+}
+.gallery-item span span:before {
+  display: none;
+}
+.gallery-banner {
+  display: none;
+  float: right;
+  clear: left;
+}
+@media (min-width: 480px) {
+  .gallery-banner {
+    display: block;
+    width: 160px;
+    margin-right: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-banner {
+    width: 160px;
+    margin-right: 10px;
+  }
+}
+.gallery-banner img {
+  width: 100%;
+}
+.gallery-banner-small {
+  display: block;
+  height: 80px;
+  background: #fbf6e8;
+  margin-bottom: 6px;
+  text-decoration: none;
+  color: #000;
+}
+@media (min-width: 480px) {
+  .gallery-banner-small {
+    display: none;
+  }
+}
+.gallery-banner-small img {
+  float: left;
+}
+.gallery-banner-small div {
+  margin-left: 120px;
+}
+.gallery-banner-small p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #bebebe;
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+}
+.gallery-banner-small h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+  display: block;
+}
+.gallery-banner-small span {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 5px 0;
+}
+.w768 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .w768 {
+    display: block;
+  }
+}
+.pagination {
+  padding: 10px 0;
+}
+.pagination span,
+.pagination a {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 34px;
+  color: #000;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  margin-right: 5px;
+}
+.pagination span:hover,
+.pagination a:hover {
+  background: #acacac;
+  font-weight: bold;
+}
+.pagination .active {
+  background: #acacac;
+  font-weight: bold;
+}
+.pagination .last,
+.pagination .title {
+  width: auto;
+}
+.pagination .last:hover,
+.pagination .title:hover {
+  background: none;
+  font-weight: normal;
+}
+.pagination .title {
+  display: none;
+}
+@media (min-width: 480px) {
+  .pagination .title {
+    display: inline-block;
+  }
+}
+.pagination .last:hover {
+  text-decoration: underline;
+}
